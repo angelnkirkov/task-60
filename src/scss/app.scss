@@ -28,23 +28,17 @@ html {
   flex-flow: column;
 }
 .navbar-burger {
-  display: none;
+  visibility: hidden;
 }
-//.navbar-menu {
-//  display: none;
-//  width: 1024px ;
-//}
-@media only screen and (min-width: 600px) {
-  .navbar-menu {
-    display: flex;
-    width: 1024px;
-  }
+.navbar-menu {
+  visibility: visible;
 }
+
 @media only screen and (max-width: 600px) {
   .navbar-menu {
-    display: none;
+    visibility: hidden;
   }
   .navbar-burger {
-    display: flex;
+    visibility: visible;
   }
 }
